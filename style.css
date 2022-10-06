@@ -25,6 +25,7 @@ body {
   font-size: 1.25rem;
 }
 
+/* left section */
 .section-left {
   background-image: url('./assets/images/dune1/colin-lloyd-V72xxgvew-A-unsplash.jpg');
   background-position: center;
@@ -64,7 +65,7 @@ body {
   gap: 1rem;
 }
 
-.banner .logo {
+.banner img {
   width: 120px;
 }
 
@@ -72,6 +73,8 @@ body {
   font-size: 6rem;
 }
 
+/* right section */
 .section-right {
   width: 65%;
 }
+
