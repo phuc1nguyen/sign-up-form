@@ -1,5 +1,5 @@
 :root {
-
+  
 }
 
 @font-face {
@@ -11,4 +11,81 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 1.25rem;
+}
+
+.section-left {
+  background-image: url('./assets/images/dune1/colin-lloyd-V72xxgvew-A-unsplash.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+  align-self: stretch;
+  width: 35%;
+  color: #fff;
+}
+
+.section-left .credit {
+  position: absolute;
+  bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.section-left .credit a {
+  color: #fff;
+}
+
+.section-left .banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+
+.banner .transparent-overlay {
+  position: inherit;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #000;
+  opacity: 0.6;
+}
+
+.banner .logo,
+.banner h1 {
+  position: relative;
+  z-index: 2;
+}
+
+.banner .logo {
+  width: 120px;
+}
+
+.banner h1 {
+  font-size: 6rem;
+}
+
+.section-right {
+  width: 65%;
 }
