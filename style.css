@@ -17,6 +17,12 @@ img {
   width: 100%;
 }
 
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
 body {
   display: flex;
   align-items: center;
@@ -60,13 +66,13 @@ body {
   width: 100%;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.65);
-  top: 20vh;
+  top: 25vh;
   padding: 1rem 0;
   gap: 1rem;
 }
 
 .banner img {
-  width: 120px;
+  width: 110px;
 }
 
 .banner h1 {
@@ -75,6 +81,45 @@ body {
 
 /* right section */
 .section-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 65%;
+  height: 100%;
+  font-weight: bold;
+  font-size: 1.3rem;
 }
 
+#my-form {
+  padding: 1rem 3rem;
+}
+
+.section-right .heading,
+.section-right .footing {
+  padding: 3rem;
+}
+
+.section-right .heading {
+  width: 80%;
+}
+
+.footing button {
+  padding: 1rem 3rem;
+  border-radius: 8px;
+  transition-duration: 0.6s;
+  background-color: #415d67;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.footing button:hover {
+  transform: scale(1.1);
+}
+
+.footing a {
+  color: #415d67;
+  text-decoration: none;
+}
