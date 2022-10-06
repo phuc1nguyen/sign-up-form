@@ -2,10 +2,10 @@
 
 }
 
-/* @font-face {
-  font-family: ;
-  src: url();
-} */
+@font-face {
+  font-family: Arial, Helvetica, sans-serif;
+  src: url('./assets/fonts/Norse-Bold.otf');
+}
 
 * {
   margin: 0;
