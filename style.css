@@ -1,6 +1,8 @@
 :root {
   --primary-color: #415d67;  
   --white-color: #fff;
+  --valid-color: rgb(90, 215, 90);
+  --invalid-color: rgb(255, 0, 0);
 }
 
 @font-face {
@@ -18,10 +20,17 @@ img {
   width: 100%;
 }
 
+label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
 button {
   outline: none;
   border: none;
   cursor: pointer;
+  letter-spacing: 1px;
 }
 
 body {
@@ -93,6 +102,18 @@ body {
 
 #my-form {
   padding: 1rem 3rem;
+  box-shadow: 5px 5px 10px rgba(40, 40, 40, 0.3);
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#my-form >:first-child {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.form-control {
+  margin-bottom: 1rem;
 }
 
 .section-right .heading,
@@ -101,7 +122,52 @@ body {
 }
 
 .section-right .heading {
+  width: 60%;
+}
+
+.form-control {
+  width: 50%;
+}
+
+.form-control input {
   width: 80%;
+  padding: .5rem;
+  border-radius: 10px;
+  border-color: rgb(200, 200, 200);
+  border-width: 1px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.form-control input:focus {
+  color: var(--primary-color);
+  box-shadow: -3px -3px inset var(--primary-color);
+  font-weight: bold;
+}
+
+.form-control input:focus:valid {
+  border-width: 2px;
+  border-color: var(--valid-color);
+}
+
+.form-control input:focus:invalid {
+  border-width: 2px;
+  border-color: var(--invalid-color);
+}
+
+.form-control input:focus::placeholder {
+  color: var(--primary-color);
+  font-weight: lighter;
+}
+
+label[for="fname"]::after,
+label[for="lname"]::after,
+label[for="email"]::after,
+label[for="password"]::after,
+label[for="cf-password"]::after {
+  content: "*";
+  color: var(--invalid-color);
+  font-size: 18px;
 }
 
 .footing button {
