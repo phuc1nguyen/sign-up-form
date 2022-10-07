@@ -150,11 +150,6 @@ body {
   border-color: var(--valid-color);
 }
 
-.form-control input:focus:invalid {
-  border-width: 2px;
-  border-color: var(--invalid-color);
-}
-
 .form-control input:focus::placeholder {
   color: var(--primary-color);
   font-weight: lighter;
@@ -184,6 +179,7 @@ label[for="cf-password"]::after {
 
 .footing button:hover {
   transform: scale(1.1);
+  background-color: #30434b;
 }
 
 .footing a {
